@@ -1,5 +1,5 @@
-import CSVUtils from "./utils/csv-util";
-import RandomUtils from "./utils/random-utils";
+import {CSVUtils} from "./utils/csv-util";
+import {RandomUtils} from "./utils/random-utils";
 
 export {CSVUtils, RandomUtils};
 
