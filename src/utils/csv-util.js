@@ -1,4 +1,4 @@
-export class CSVUtils {
+export default class CSVUtils {
 
     static parse(content, separator = ",") {
 
