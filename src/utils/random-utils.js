@@ -1,4 +1,4 @@
-export default class RandomUtils {
+export class RandomUtils {
 
     /**
      * Source: https://www.w3schools.com/js/js_random.asp
