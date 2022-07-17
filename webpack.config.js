@@ -7,9 +7,8 @@ module.exports = {
     },
     output: {
         filename: "just.bundle.js",
-        library: "MyLibrary",
+        library: "just",
         libraryTarget: "umd",
-        globalObject: "this",
         path: path.resolve(__dirname, "dist")
     },
 };

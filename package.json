@@ -5,7 +5,7 @@
 	"version": "0.0.1",
 	"homepage": "https://github.com/thiagodnf/just",
 	"license": "MIT",
-	"main": "dist/just.min.js",
+	"module": "src/index.js",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/thiagodnf/just"

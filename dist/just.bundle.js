@@ -4,10 +4,10 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["MyLibrary"] = factory();
+		exports["just"] = factory();
 	else
-		root["MyLibrary"] = factory();
-})(this, () => {
+		root["just"] = factory();
+})(self, () => {
 return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ([
