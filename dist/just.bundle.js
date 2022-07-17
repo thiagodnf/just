@@ -11,28 +11,7 @@
 return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ([
-/* 0 */
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "myfunc": () => (/* binding */ myfunc)
-/* harmony export */ });
-/* harmony import */ var _utils_csv_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _utils_random_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* module decorator */ module = __webpack_require__.hmd(module);
-
-
-
-module.exports = _utils_csv_util__WEBPACK_IMPORTED_MODULE_0__["default"];
-module.exports = _utils_random_utils__WEBPACK_IMPORTED_MODULE_1__["default"];
-
-function myfunc(){
-    console.log("oi");
-}
-
-
-/***/ }),
+/* 0 */,
 /* 1 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -103,16 +82,13 @@ class RandomUtils {
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
-/******/ 			loaded: false,
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -128,21 +104,6 @@ class RandomUtils {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/harmony module decorator */
-/******/ 	(() => {
-/******/ 		__webpack_require__.hmd = (module) => {
-/******/ 			module = Object.create(module);
-/******/ 			if (!module.children) module.children = [];
-/******/ 			Object.defineProperty(module, 'exports', {
-/******/ 				enumerable: true,
-/******/ 				set: () => {
-/******/ 					throw new Error('ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: ' + module.id);
-/******/ 				}
-/******/ 			});
-/******/ 			return module;
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -163,12 +124,28 @@ class RandomUtils {
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__(0);
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "CSVUtils": () => (/* reexport safe */ _utils_csv_util__WEBPACK_IMPORTED_MODULE_0__["default"]),
+/* harmony export */   "RandomUtils": () => (/* reexport safe */ _utils_random_utils__WEBPACK_IMPORTED_MODULE_1__["default"]),
+/* harmony export */   "myfunc": () => (/* binding */ myfunc)
+/* harmony export */ });
+/* harmony import */ var _utils_csv_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _utils_random_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+
+
+
+
+
+function myfunc(){
+    console.log("oi");
+}
+
+})();
+
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
