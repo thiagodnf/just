@@ -1,4 +1,4 @@
-export class CSVUtils {
+export class csv {
 
     static parse(content, separator = ",") {
 

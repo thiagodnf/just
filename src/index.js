@@ -1,7 +1,7 @@
-import {CSVUtils} from "./utils/csv-util";
-import {RandomUtils} from "./utils/random-utils";
+import {csv} from "./utils/csv";
+import {random} from "./utils/random";
 
-export {CSVUtils, RandomUtils};
+export {csv, random};
 
 export function myfunc(){
     console.log("oi");

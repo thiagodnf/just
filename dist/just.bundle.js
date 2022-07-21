@@ -17,9 +17,9 @@ return /******/ (() => { // webpackBootstrap
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CSVUtils": () => (/* binding */ CSVUtils)
+/* harmony export */   "csv": () => (/* binding */ csv)
 /* harmony export */ });
-class CSVUtils {
+class csv {
 
     static parse(content, separator = ",") {
 
@@ -50,9 +50,9 @@ class CSVUtils {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "RandomUtils": () => (/* binding */ RandomUtils)
+/* harmony export */   "random": () => (/* binding */ random)
 /* harmony export */ });
-class RandomUtils {
+class random {
 
     /**
      * Source: https://www.w3schools.com/js/js_random.asp
@@ -63,6 +63,13 @@ class RandomUtils {
     randInt(min, max) {
 
         return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    /**
+     * returns a number from 0 up to 1. The number can be 0, but it can't be 1.
+     */
+    randFloat(){
+        return Math.random();
     }
 }
 
@@ -129,12 +136,12 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "CSVUtils": () => (/* reexport safe */ _utils_csv_util__WEBPACK_IMPORTED_MODULE_0__.CSVUtils),
-/* harmony export */   "RandomUtils": () => (/* reexport safe */ _utils_random_utils__WEBPACK_IMPORTED_MODULE_1__.RandomUtils),
-/* harmony export */   "myfunc": () => (/* binding */ myfunc)
+/* harmony export */   "csv": () => (/* reexport safe */ _utils_csv__WEBPACK_IMPORTED_MODULE_0__.csv),
+/* harmony export */   "myfunc": () => (/* binding */ myfunc),
+/* harmony export */   "random": () => (/* reexport safe */ _utils_random__WEBPACK_IMPORTED_MODULE_1__.random)
 /* harmony export */ });
-/* harmony import */ var _utils_csv_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _utils_random_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _utils_csv__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _utils_random__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 
 
 
